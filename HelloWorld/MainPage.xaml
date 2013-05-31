@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="DevDiv_HelloWorld.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevDiv_HelloWorld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Image HorizontalAlignment="Left" Height="218" Margin="410,427,0,0" VerticalAlignment="Top" Width="460" Source="Assets/icon.png"/>
+        <TextBox Height="71" Margin="455,294,0,0" TextWrapping="Wrap" Text="DevDiv，你好！" Width="373" FontSize="48" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button Content="点击" HorizontalAlignment="Left" Margin="520,155,0,0" VerticalAlignment="Top" Height="90" Width="240" FontSize="48" Click="ClickButton"/>
+
+    </Grid>
+</Page>
