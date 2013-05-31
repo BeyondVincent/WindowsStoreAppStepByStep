@@ -1,0 +1,16 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevDiv_AppBar.Resources">
+    
+<ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Common/StandardStyles.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+<Style x:Key="DoneAppBarButtonStyle" TargetType="Button" 
+           BasedOn="{StaticResource AppBarButtonStyle}">
+        <Setter Property="AutomationProperties.Name" Value="完成"/>
+        <Setter Property="Content" Value="&#xE10B;"/>
+    </Style>
+    
+</ResourceDictionary>

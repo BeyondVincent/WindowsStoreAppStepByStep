@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="DevDiv_AppBar.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevDiv_AppBar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:flyouts="using:DevDiv_AppBar.Flayouts"
+    mc:Ignorable="d">
+    
+
+    <Grid Background ="PaleGoldenrod">
+        <Image HorizontalAlignment="Left" Height="200" Margin="495,215,0,0" VerticalAlignment="Top" Width="295" Source="Assets/icon.png"/>
+        <flyouts:SearchFlayout x:Name="SearchFlayout"/>
+    </Grid>
+
+<Page.BottomAppBar>
+    <AppBar>
+        <Grid Background="Firebrick" HorizontalAlignment="Left" Width="1346">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition>
+                </ColumnDefinition>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Column="0" HorizontalAlignment="Left">
+                <Button x:Name="AppBarSearchButton" 
+                        Style="{StaticResource SearchAppBarButtonStyle}" 
+                        Click="AppBarButtonClick" 
+                        AutomationProperties.Name="搜索"/>
+                <Button x:Name="AppBarMoreButton" Style="{StaticResource MoreAppBarButtonStyle}" Click="AppBarButtonClick" AutomationProperties.Name="更多"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right">
+                <Button x:Name="AppBarDoneButton" 
+                        Style="{StaticResource DoneAppBarButtonStyle}" 
+                        Click="AppBarButtonClick"/>
+            </StackPanel>
+        </Grid>
+    </AppBar>
+</Page.BottomAppBar>
+
+</Page>
