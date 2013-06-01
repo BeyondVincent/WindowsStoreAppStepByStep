@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="DevDiv_AppNavBar.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevDiv_AppNavBar"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.TopAppBar>
+        <AppBar Background="SteelBlue">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="btBlankPage1"
+                    Style="{StaticResource YesAppBarButtonStyle}"
+                    AutomationProperties.Name="第一个画面" IsEnabled="False"
+                    Click="NavBarButtonPress"/>
+                <Button x:Name="btBlankPage2"
+                    Style="{StaticResource YesAppBarButtonStyle}"
+                    AutomationProperties.Name="第二个画面" IsEnabled="True"
+                    Click="NavBarButtonPress"/>
+            </StackPanel>
+        </AppBar>
+    </Page.TopAppBar>
+    <Grid Background="OliveDrab">
+        <Frame x:Name="MainFrame" />
+    </Grid>
+</Page>

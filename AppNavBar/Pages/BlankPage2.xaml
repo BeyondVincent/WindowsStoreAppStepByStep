@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="DevDiv_AppNavBar.Pages.BlankPage2"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevDiv_AppNavBar.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" FontSize="72">
+
+    <Grid Background="OliveDrab">
+        <TextBlock HorizontalAlignment="Left" Height="255" Margin="111,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1090" FontSize="48">
+        	<Run Text="大家好！我是破船"/>
+        	<LineBreak/>
+        	<Run Text="欢迎跟我一起学习Window"/>
+        	<Run Text=" 8 Metro App开发"/>
+        </TextBlock>
+
+    </Grid>
+</Page>
