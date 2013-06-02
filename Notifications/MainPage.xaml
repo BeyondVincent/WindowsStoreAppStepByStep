@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="DevDiv_Notifications.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevDiv_Notifications"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="BurlyWood">
+        <Button Content="发送Toast通知" FontSize="32" HorizontalAlignment="Left" Margin="28,195,0,0" VerticalAlignment="Top" Height="60" Width="327" Click="sendToast" Background="#FF633A32"/>
+        <Button Content="发送Tile文字 通知" FontSize="32" HorizontalAlignment="Left" Margin="26,303,0,0" VerticalAlignment="Top" Height="60" Width="329" Click="SendTileText" Background="#FFF03911"/>
+        <Button Content="发送Badge 数字通知" FontSize="32" HorizontalAlignment="Left" Margin="26,410,0,0" VerticalAlignment="Top" Height="60" Width="332" Click="SendBadgeNumber" Background="#FF4CC731"/>
+        <Button Content="发送Badge Glyph通知" FontSize="32" HorizontalAlignment="Left" Margin="376,412,0,0" VerticalAlignment="Top" Height="60" Width="352" Click="SendBadgeGlyph" Background="#FF44BB29"/>
+        <Button Content="清除Badge通知" FontSize="32" HorizontalAlignment="Left" Margin="748,415,0,0" VerticalAlignment="Top" Height="60" Width="277" Click="ClearBadge" Background="#FF52B93B"/>
+        <Button Content="清除Tile 通知" FontSize="32" HorizontalAlignment="Left" Margin="746,305,0,0" VerticalAlignment="Top" Height="60" Width="279" Click="ClearTile" Background="#FFE63D17"/>
+        <Button Content="发送Tile图片 通知" FontSize="32" HorizontalAlignment="Left" Margin="380,305,0,0" VerticalAlignment="Top" Height="60" Width="340" Click="SendTilePic" Background="#FFEA3107"/>
+        <Image Margin="1065,599,21,29" Source="Assets/icon.png"/>
+        <TextBlock Margin="985,745,-14,-25" TextWrapping="Wrap" Text="大家好，我是破船，欢迎大家跟我一起学习Windows 8 Metro App开发" FontSize="15" VerticalAlignment="Top" Height="48"/>
+
+    </Grid>
+</Page>
