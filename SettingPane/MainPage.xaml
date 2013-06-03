@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="DevDiv_SettingPaneDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevDiv_SettingPaneDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="BurlyWood">
+        <StackPanel Margin="50,50,0,0">
+            <TextBlock Foreground="Red" Text="选择设置面板宽度" FontSize="40" Margin="206,0,-206,0"></TextBlock>
+            <RadioButton Background="Blue" FontSize="30" GroupName="SettingsWidth" Content="346" IsChecked="True" Checked="HandleSizeChange" Height="70" Margin="206,0,690,0" />
+            <RadioButton Background="Red" FontSize="30" GroupName="SettingsWidth" Content="646" Checked="HandleSizeChange" Height="65" Margin="206,0,690,0" />
+            <Button  Background="DarkGreen" FontSize="60" Content="显示设置面板" Click="Button_Click_1" Height="340" Width="420" Margin="206,0,0,0" />
+        </StackPanel>
+    </Grid>
+</Page>
