@@ -1,0 +1,24 @@
+import "inspectable.idl";
+
+#define COMPONENT_VERSION 1.0
+
+namespace WRLNumberComponent
+{
+    runtimeclass Number;
+
+    [exclusiveto(Number)]
+    [uuid(5b197688-2f57-4d01-92cd-a888f10dcd90)]
+    [version(1.0)]
+    interface INumber : IInspectable
+    {
+        HRESULT GetValue([out, retval] INT32* value);
+        HRESULT SetValue([in] INT32 value);
+    }
+
+    [activatable(1.0)]
+    [version(1.0)]
+    runtimeclass Number
+    {
+        [default] interface INumber;
+    }
+}
