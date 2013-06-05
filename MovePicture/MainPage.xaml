@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="BV_MovePicture.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BV_MovePicture"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Image Source="/Assets/1.jpg"
+               ManipulationStarted="Image_ManipulationStarted_1"
+               ManipulationDelta="Image_ManipulationDelta_1"
+               ManipulationCompleted="Image_ManipulationCompleted_1" 
+               ManipulationMode="All" 
+               Margin="342,34,591,337" Tapped="Image_Tapped_1">
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="translateTransform"/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Source="/Assets/BeyondVincentWin8Logo.png" Height="100" Margin="568,658,0,10"
+                ManipulationStarted="Image_ManipulationStarted_1"
+               ManipulationDelta="Image_ManipulationDelta_1"
+               ManipulationCompleted="Image_ManipulationCompleted_1" 
+               ManipulationMode="All" >
+            <Image.RenderTransform>
+                <TranslateTransform x:Name="translateTransform1"/>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Page>
