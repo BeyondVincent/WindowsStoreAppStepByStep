@@ -1,0 +1,19 @@
+﻿<UserControl
+    x:Class="BV_CustomizeMessageDialog.MyUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BV_CustomizeMessageDialog"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+    
+    <Grid Margin="-177,-183,-382,-144">
+        <Grid Background="Gray" Opacity="0.5"></Grid>
+        <Grid  Background="Green"  Height="169" VerticalAlignment="Center" >
+            <Button Content="下一关" FontSize="30" Background="Red" Click="Button_Click_1" HorizontalAlignment="Center" Height="53" Margin="364,106,454,0" VerticalAlignment="Top" Width="141"/>
+            <TextBlock Foreground="Red" FontSize="30" HorizontalAlignment="Center" Text="获胜！！  积分：888"  Height="67"  TextWrapping="Wrap" Width="329"/>
+        </Grid>
+    </Grid>
+</UserControl>

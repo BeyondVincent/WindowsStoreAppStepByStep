@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="BV_CustomizeMessageDialog.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BV_CustomizeMessageDialog"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Blue">
+        <Button Content="show" Background="Red" Height="155" Width="348" Margin="469,187,0,426" Click="Button_Click_1" />
+
+        <Popup Name="popup" Closed="popup_Closed_1" IsLightDismissEnabled="False">
+        </Popup>
+
+    </Grid>
+</Page>
