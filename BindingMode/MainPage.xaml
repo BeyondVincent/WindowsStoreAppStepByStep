@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="BV_Binding_Mode.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BV_Binding_Mode"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--<Grid Background="BurlyWood">
+        <Grid Height="150" Width="165" >
+            <TextBox FontSize="30"  Name="textBox" Margin="0,-117,-218,0" Height="82" VerticalAlignment="Top" Foreground="Red"
+            Text="OneWay绑定模式"
+            Background="{Binding ElementName=listBox, Path=SelectedItem.Content, Mode=OneWay}">
+            </TextBox>
+            <ListBox Name="listBox" FontSize="30" Margin="0,0,-218,-70">
+                <ListBoxItem Content="Green"/>
+                <ListBoxItem  Content="Blue" IsSelected="True"/>
+                <ListBoxItem Content="Orange" />
+            </ListBox>
+        </Grid>
+    </Grid>-->
+
+    <!--<Grid Background="Green">
+        <Grid Height="180" Width="165">
+            <TextBox FontSize="30"  Name="textBox" Margin="0,-101,-192,0" Height="56" VerticalAlignment="Top"
+            Text ="{Binding ElementName=listBox,
+                    Path=SelectedItem.Content,
+                    Mode=TwoWay}">
+            </TextBox>
+            <ListBox FontSize="30" Name="listBox" Margin="0,0,-192,-62" >
+                <ListBoxItem Content="破船"/>
+                <ListBoxItem Content="BeyondVincent"/>
+                <ListBoxItem Content="小破船"/>
+                <ListBoxItem Content="小BeyondVincent"/>
+            </ListBox>
+        </Grid>
+    </Grid>-->
+
+    <Grid Background="Green">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <Slider x:Name="sliderOneTimeDataSource" Minimum="1" Maximum="100" Value="50"  Background="Wheat" Margin="593,0,354,0"/>
+            <TextBox x:Name="tbOneTimeDataBound" FontSize="50" Text="{Binding ElementName=sliderOneTimeDataSource, Path=Value, Mode=OneTime}" Height="86" Margin="608,0,354,0"/>
+        </StackPanel>
+    </Grid>
+</Page>
