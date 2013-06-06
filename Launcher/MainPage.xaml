@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="BV_Launcher.MainPage"
+    IsTabStop="false"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BV_Launcher"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <Button Content="打开Win8开发书籍" FontSize="50" Click="DefaultLaunch" Height="100" Width="685"/>
+            <Button Content="显示程序列表以打开文件" FontSize="50" Click="DisplayApplicationPicker"  Height="100" Width="685"/>
+            <Button Content="商店搜索程序以打开文件" FontSize="50" Click="RecommendedApp"  Height="100" Width="685"/>
+            <Button Content="浏览DevDiv网站" FontSize="50" Click="OpenDevDiv"  Height="100" Width="685"/>
+        </StackPanel>
+    </Grid>
+</Page>
